@@ -1,7 +1,7 @@
-#Pierre Hermey's Portfolio
+# Pierre Hermey's Portfolio
 
 > Portfolio Project
 > Brief is here
-> Wireframes are coming soon
+> Wireframes are here
+> MockUp are coming soon
 
-# pierreh-portfolio
