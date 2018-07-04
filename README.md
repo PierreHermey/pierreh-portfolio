@@ -2,6 +2,7 @@
 
 > Portfolio Project
 > * Brief is here
-> * Wireframes are here
-> * MockUp are coming soon
+> * Wireframe is here
+> * MockUp is here
+> * Development started
 
