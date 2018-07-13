@@ -1,26 +1,112 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="{{ asset('/images/planet.svg') }}" type="image/svg">
+        <link rel="stylesheet" href="{{ asset('build/main.css') }}" />
         {% block head %}
-            <link rel="icon" type="image/png" href=""/>
-            <link rel="stylesheet" href="style.css" />
             <title>Pierre Hermey - {% block page %}{% endblock %}</title>
         {% endblock %}
     </head>
     <body>
         <header>
-            {% block header %}
-                
-            {% endblock %}
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="works">Works</a></li>
-                    <li><a href="profile">Profile</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div id="header-text">
+                <div id="greetings">
+                    <figure class="snip1176"><img src="{{ asset('/images/header_space_road.jpg') }}" style="visibility: hidden;"/>
+                        <figcaption>
+                            <div class="icon"><span><ion-icon name="planet"></ion-icon></span></div>
+                                <h2>{% block header %}{% endblock %}</h2>
+                            <div class="caption">
+                                <p>Web developer Junior</p>
+                            </div>
+                        </figcaption><a href="#"></a>
+                    </figure>
+                </div>
+            </div>
+            <div id="big-image"></div>
         </header>
-        <section>{% block content %}{% endblock %}</section>
+        <main>
+            <div id="shape-container">
+                <div id="left-skew"></div>
+                <div id="right-skew"></div>
+                <nav class="menu-wrapper">
+                    <button class="menu-btn" has-ripple="true">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <span class="ripple"></span>
+                    </button>
+                    <ul class="menu">
+                        <li class="menuitem-wrapper">
+                        <div class="icon-holder">
+                            <a href="/" class="menu-item">
+                                <ion-icon name="home"></ion-icon>
+                            </a>
+                        </div>
+                        <svg class="circle-holder">
+                            <circle r="88" cx="50%" cy="50%" fill="none">
+                            </circle>
+                        </svg>
+                        </li>
+                        <li class="menuitem-wrapper">
+                        <div class="icon-holder">
+                            <a href="profile" class="menu-item">
+                                <ion-icon name="person"></ion-icon>
+                            </a>
+                        </div>
+                        <svg class="circle-holder">
+                            <circle r="88" cx="50%" cy="50%" fill="none">
+                            </circle>
+                        </svg>
+                        </li>
+                        <li class="menuitem-wrapper">
+                        <div class="icon-holder">
+                            <a href="works" class="menu-item">
+                                <ion-icon name="briefcase"></ion-icon>
+                            </a>
+                        </div>
+                        <svg class="circle-holder">
+                            <circle r="88" cx="50%" cy="50%" fill="none">
+                            </circle>
+                        </svg>
+                        </li>
+                        <li class="menuitem-wrapper">
+                        <div class="icon-holder">
+                            <a href="contact" class="menu-item">
+                                <ion-icon name="contacts"></ion-icon>
+                            </a>
+                        </div>
+                        <svg class="circle-holder">
+                            <circle r="88" cx="50%" cy="50%" fill="none">
+                            </circle>
+                        </svg>
+                        </li>
+                        <li class="menuitem-wrapper">
+                        <svg class="circle-holder">
+                            <circle r="88" cx="50%" cy="50%" fill="none">
+                            </circle>
+                        </svg>
+                        <div class="icon-holder">
+                            <a href="admin" class="menu-item">
+                                <ion-icon name="lock"></ion-icon>
+                            </a>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="main-content">
+                {% block content %}
+                
+                {% endblock %}
+            </div>
+        </main>
+        <footer id="footer"></footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="{{ asset('build/main.js') }}"></script>
     </body>
 </html>

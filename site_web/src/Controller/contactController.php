@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class contactController extends Controller
 {
     /**
-     * @Route("/contact")
+     * @Route("contact")
     */
 
     public function contact()

@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class worksController extends Controller
 {
     /**
-     * @Route("/works")
+     * @Route("works")
     */
 
     public function works()

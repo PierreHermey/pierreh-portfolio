@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class homeController extends Controller
 {
     /**
-     * @Route("/home")
+     * @Route("/")
     */
 
     public function home()

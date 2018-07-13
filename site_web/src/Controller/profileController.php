@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class profileController extends Controller
 {
     /**
-     * @Route("/profile")
+     * @Route("profile")
     */
 
     public function profile()
