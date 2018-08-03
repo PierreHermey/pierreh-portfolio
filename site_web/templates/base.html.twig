@@ -12,9 +12,10 @@
     </head>
     <body>
         <header>
+        {% block btnLogOut %}{% endblock %}
             <div id="header-text">
                 <div id="greetings">
-                    <figure class="snip1176"><img src="{{ asset('/images/header_space_road.jpg') }}" style="visibility: hidden;"/>
+                    <figure class="snip1176"><img src="{{ asset('/images/header_milkyway.jpg') }}" style="visibility: hidden;"/>
                         <figcaption>
                             <div class="icon"><span><ion-icon name="planet"></ion-icon></span></div>
                                 <h2>{% block header %}{% endblock %}</h2>
@@ -89,7 +90,7 @@
                             </circle>
                         </svg>
                         <div class="icon-holder">
-                            <a href="admin" class="menu-item">
+                            <a href="connexion" class="menu-item">
                                 <ion-icon name="lock"></ion-icon>
                             </a>
                         </div>

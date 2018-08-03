@@ -38,7 +38,7 @@
             height: 100%;
             width: 100%;
             background-color: #fff;
-            background-image: url('../../public/images/header_space_road.jpg');
+            background-image: url('../../public/images/header_milkyway.jpg');
             background-position: center center;
             background-size: cover;
             position: fixed;
@@ -46,7 +46,6 @@
             right: 0;
       
             z-index: -1;
-            filter: brightness(0.5);
           }
         }
         
@@ -155,7 +154,7 @@
         font-size: 4vw;
         top: 15%;
         left: 0;
-        max-height: 350px;
+        max-height: 400px;
       }
       figure.snip1176 * {
         -webkit-box-sizing: border-box;
@@ -243,14 +242,14 @@
       }
       figure.snip1176 p:before,
       figure.snip1176 p:after {
-        width: 170%;
+        width: 173%;
         bottom: 50%;
       }
       figure.snip1176 p:before {
-        left: -120%;
+        left: -125%;
       }
       figure.snip1176 p:after {
-        right: -120%;
+        right: -125%;
       }
       figure.snip1176 a {
         left: 0;
@@ -323,7 +322,7 @@ a {color: white;text-decoration: none;}
   width: 100%;
   height: 100%;
   transform: scale(0);
-  transform-origin: center;
+  transform-origin: center 75%;
   transition: all 0.08s ease-in-out;
   position: absolute;
   top: -30%;
@@ -559,6 +558,17 @@ a {color: white;text-decoration: none;}
   }
 }
 
+.disconnect{
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -250px;
+  right: 2%;
+}
+
+.disconnect:hover{
+  color: blueviolet;
+}
 
 
 
