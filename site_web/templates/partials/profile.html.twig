@@ -5,6 +5,8 @@
 {% block header %} {{ Profile }} {% endblock %}
 {% block content %}
 
-
+{% for page in jobs %}
+    {{ page.jobs }}
+{% endfor %}
 
 {% endblock %}
