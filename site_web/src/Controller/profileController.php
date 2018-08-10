@@ -16,12 +16,9 @@ class profileController extends Controller
     public function profile()
     {
         $profile = 'Profile';
-        
-        
-
+    
         return $this->render('partials/profile.html.twig', array(
             'Profile' => $profile,
-            'jobs' => $jobs
         ));
     }
 }
