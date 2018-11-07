@@ -1,0 +1,86 @@
+
+.disconnect{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -250px;
+    right: 2%;
+}
+
+.disconnect:hover{
+    color: blueviolet;
+}
+
+.well{
+    width: 90vW;
+    margin: auto;
+    color: white;
+    text-align: center;
+    margin-top: -5%;
+}
+
+fieldset{
+    width: 40vW;
+    margin: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.form-group input{
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    background: none;
+    border: 2px solid white;
+    padding: 1%;
+    color: white;
+    text-align: center;
+}
+
+.form-group input:active , .form-group input:focus{
+    border-color: rgb(135, 18, 202);
+}
+
+fieldset legend{
+    margin: 1%;
+    padding: 2%;
+    font-size: 2rem;
+    color: white;
+}
+
+.animated-button-red{
+    border: 2px solid rgb(255, 255, 255);
+    background: none;
+    margin: 5%;
+    padding: 2% 3%; 
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.animated-button-red:hover{
+    background:  rgb(135, 18, 202)
+}
+
+.alert.alert-danger{
+    text-align: center; 
+    color: red;
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    fieldset{
+        width: 100%;
+    }
+
+    .well{
+        margin-top: -20%;
+        margin-bottom: 10%;
+    }
+}

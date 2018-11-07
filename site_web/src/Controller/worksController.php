@@ -16,9 +16,14 @@ class worksController extends Controller
     public function works()
     {
         $works = 'Works';
+        $repository = $this->getDoctrine()
+                ->getManager()
+                ->getRepository('App:Projects');
+        $projects = $repository->findAll();
 
         return $this->render('partials/works.html.twig', array(
             'Works' => $works,
+            'projects' => $projects
         ));
     }
 }

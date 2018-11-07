@@ -1,0 +1,21 @@
+.home_presentation{
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    color: white;
+}
+
+.home_welcome, .home_text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home_welcome{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+    .home_presentation{
+        width: 100%;
+    }
+}

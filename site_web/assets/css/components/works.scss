@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 104%;
+    margin: auto;
+
+    .project-cards{
+        background: white;
+        box-shadow: black 2px 2px 5px;
+        width: 30%;
+        height: 100%;
+        margin: 1%;
+
+        img{
+            width: 100%;
+            height: 70%;
+        }
+
+        .project-cards-content{
+            padding: 1%;
+
+            h3{
+                margin: 1%;
+            }
+
+            p{
+                margin: 2%;
+                padding: 1%;
+            }
+        }
+    }
+}

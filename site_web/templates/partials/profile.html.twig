@@ -5,8 +5,34 @@
 {% block header %} {{ Profile }} {% endblock %}
 {% block content %}
 
-{% for page in jobs %}
-    {{ page.jobs }}
-{% endfor %}
+<div id="content">
+
+    <h2>Trainings :</h2>
+    <ul class="timeline">
+    
+        {% for training in trainings %}
+        <li class="event" data-date="{{ training.date|date('d-m-Y')  }}">
+            <h3>{{ training.school }}</h3>
+        <li>
+        {% endfor %}
+    </ul>
+
+    <h2>Experiences :</h2>
+    <ul class="timeline">
+    
+        {% for experience in experiences %}
+        <li class="event" data-date="{{ experience.date|date('d-m-Y')  }}">
+            <h3>{{ experience.jobs }}</h3>
+        <li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+
+
+<div id="content">
+
+</div>
 
 {% endblock %}

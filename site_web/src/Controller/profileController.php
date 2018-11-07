@@ -16,9 +16,20 @@ class profileController extends Controller
     public function profile()
     {
         $profile = 'Profile';
-    
+        $repositoryExperiences = $this->getDoctrine()
+                ->getManager()
+                ->getRepository('App:Experiences');
+        $experiences = $repositoryExperiences->findAll();
+
+        $repositoryTrainings = $this->getDoctrine()
+                ->getManager()
+                ->getRepository('App:Trainings');
+        $trainings = $repositoryTrainings->findAll();
+
         return $this->render('partials/profile.html.twig', array(
             'Profile' => $profile,
+            'trainings' => $trainings,
+            'experiences' => $experiences
         ));
     }
 }
